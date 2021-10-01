@@ -9,7 +9,6 @@ const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
 let sequelize;
-// console.log(111, config, env)
 if (config) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
