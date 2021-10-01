@@ -4,10 +4,6 @@ const Usuario = require('../models').Usuario;
 const Saldo = require('../models').Saldo;
 var bcrypt = require('bcrypt-nodejs');
 
-router.get('/teste', function (req, res, next) {
-    res.status(200).send({ teste: 'Ok.!' });
-});
-
 router.post('/cadastro', function (req, res) {
     if (!req.body.login || !req.body.senha) {
         res.status(400).send({ msg: 'Please pass login and senha.' })

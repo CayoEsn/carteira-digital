@@ -4,6 +4,12 @@
     "password": "84d05ab2741db23b220170d18edaaad195269620783c924dfad7b9aba633af1f",
     "database": "d69678ladgsjon",
     "host": "ec2-44-194-201-94.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true, 
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
