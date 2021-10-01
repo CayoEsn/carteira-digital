@@ -1,1 +1,1 @@
-web: npx nodemon
+web: npm install && npx nodemon ./bin/www
