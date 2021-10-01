@@ -5,7 +5,7 @@ const Saldo = require('../models').Saldo;
 var bcrypt = require('bcrypt-nodejs');
 
 router.get('/teste', function (req, res, next) {
-    res.status(200).send({ teste: 'Ok!' });
+    res.status(200).send({ teste: 'Ok.!' });
 });
 
 router.post('/cadastro', function (req, res) {
